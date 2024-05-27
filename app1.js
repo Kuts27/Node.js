@@ -15,9 +15,6 @@ mongoose.connect(dbURI)
 //register view engine
 app.set('view engine','ejs');
 
-// listen for request
-//app.listen(3000);
-
 app.use(morgan('dev'));
 //middleware and static files
 app.use(express.static('public'));
